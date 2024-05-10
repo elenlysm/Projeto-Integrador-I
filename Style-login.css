@@ -16,7 +16,7 @@ body *{
     width: 120px;
     height: 40px;
     border: 0;
-    background-color: hsl(138, 65%, 50%);
+    background-color: hsl(62, 100%, 50%);
     color: #fff;
     cursor: pointer;
     transition: .2s;
@@ -69,13 +69,13 @@ header ul li a{
 .main-login{
     width: 100vw;
     height: 100vh;
-    background: #201b2c;
+    background: #ecf805;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .left-login{
-    width: 50vh;
+    width: 60vh;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -83,7 +83,8 @@ header ul li a{
     flex-direction: column;
 }
 .left-login > h1{
-    color: #77ffc0;
+    color: #000000;
+    
 }
 
 .left-login-img{
@@ -91,7 +92,7 @@ header ul li a{
 }
 
 .right-login{
-    width: 50vh;
+    width: 40vh;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -99,20 +100,20 @@ header ul li a{
 }
 
 .card-login{
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: #2f2841;
+    background: #000000;
     border-radius: 20px;
-    box-shadow: 0px 10px 40px #00000056;
+    box-shadow: 0px 10px 40px #8e8c0e56;
 }
 
 .card-login > h1{
     width: 10%;
-    color: #00ff88;
+    color: #fffffd;
     font-weight: 800;
     margin: 0;
     justify-content: center;
@@ -132,10 +133,9 @@ header ul li a{
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background:#514869;
-    color: #f0ffffde;
+    background:#fdfdfc;
+    color: #000000de;
     font-size: 12pt;
-    box-shadow: 0px 10px 40px #00000056;
     outline: none;
     box-sizing: border-box;
 }
@@ -159,10 +159,10 @@ header ul li a{
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 3px;
-    color: #2b134b;
-    background: #00ff88;
+    color: #000000;
+    background: #ecf805;
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
+    box-shadow: 0px 10px 40px -12px #ffd92f;
 }
 
 @media only screen and (max-width:950px){
