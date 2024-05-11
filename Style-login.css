@@ -141,12 +141,12 @@ header ul li a{
 }
 
 .textfield > label{
-    color:#f0ffffde ;
+    color:#fbf8f8de ;
     margin-bottom: 10px;
 }
 
 .textfield > input::placeholder{
-    color: #f0ffff94;
+    color: #03040494;
 }
 
 .btn-login{
