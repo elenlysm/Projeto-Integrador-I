@@ -1,14 +1,14 @@
 body {
-    background: url(img/bg-image.png) no-repeat;
-    -webkit-background-size: 100vh 100;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
+    background: url(img/bg-image.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
 form {
     transform: translate(-50%, -50%);
-    margin-top: 29%;
+    margin-top: 27%;
     margin-left: 56%;
 }
 
@@ -42,7 +42,7 @@ input {
 
 .ti-box {
     position: absolute;
-    margin-top: 3%;
+    margin-top: 5%;
     margin-left: 1%;
     box-shadow: #000 -0.8rem -1rem 0rem 1rem;
     width: 8rem;
