@@ -14,15 +14,22 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="home.html">HOME</a>
-            <a href="reservas.html">RESERVAS</a>
-        </nav>
-    </header>
-    <br>
     <section>
-        <h1>ÚLTIMAS RESERVAS</h1>
+        <h3>RESERVE UM LABORATÓRIO</h3>
+        <label for="">INSIRA A QUANTIDADE DE ALUNOS</label>
+        <input type="number">
+        <h5>SELECIONE UMA DATA E UM HORÁRIO</h5>
+        <img src="img/calendario.png" alt="">
+        <input type="date">
+        <img src="img/relogio.png" alt="">
+        <label for="">DAS: </label>
+        <input type="time">
+        <label for="">AS: </label>
+        <input type="time">
+        <h5>LABORATÓRIOS DISPONÍVEIS</h5>
+        <table></table>
+        <button type="submit">CONFIRMAR ALOCAÇÃO</button>
+        <h3>ÚLTIMAS RESERVAS</h3>
         <table>
             <tr>
                 <th>LABORATÓRIO</th>
@@ -39,11 +46,15 @@
     <br>
     <section>
         <h3>INFORMAÇÕES DE USUÁRIO</h3>
+        <h5>NOME</h5>
+        <h5>E-MAIL</h5>
+        <h5>CURSO</h5>
         <label for="">MATÉRIAS</label>
         <select name="materias" id="">
             <option value=""><data value=""></data></option>
         </select>
     </section>
+    <a href="login.html"><img src="img/sair.png" alt=""></a>
     <footer>
         <div class="rodape fixed-bottom bg-black">
             <p class="rod01 mx-auto" style="width: fit-content;">FACULDADES INTEGRADAS EINSTEIN DE LIMEIRA - FIEL
