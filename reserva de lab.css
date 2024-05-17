@@ -2,6 +2,37 @@ body {
     background-color: #edc51b;
 }
 
+h5 {
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.logo {
+    display: grid;
+    grid-template-areas: s;
+}
+
+.informações {display: flex;}
+
+.sair {
+    width: 3rem;
+}
+
+.data {
+    width: 3rem;
+}
+
+.hora {
+    width: 3rem;
+}
+
+.rodape {
+    position: relative;
+}
+
 .rod01 {
 
     font-weight: bold;
