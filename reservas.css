@@ -1,5 +1,6 @@
 body {
     background-color: #edc51b;
+    display: block;
 }
 
 h5 {
@@ -10,14 +11,31 @@ h3 {
     font-weight: bold;
 }
 
-.logo {
+nav {
     display: grid;
-    grid-template-areas: s;
+    align-items: center;
+    align-content: space-evenly;
+    justify-content: space-around;
 }
 
-.informações {display: flex;}
+img.logo {
+    width: 100%;
+    height: 10rem;
+}
+
+.informações {
+    display: flex;
+}
 
 .sair {
+    width: 3rem;
+}
+
+.mail {
+    width: 4rem;
+}
+
+.nome {
     width: 3rem;
 }
 

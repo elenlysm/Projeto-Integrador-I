@@ -41,26 +41,6 @@ input {
 
 }
 
-.ti-box {
-    position: absolute;
-    margin-top: 5%;
-    margin-left: 1%;
-    box-shadow: #000 -0.8rem -1rem 0rem 1rem;
-    width: 8rem;
-    height: 4rem;
-    background: #edc51b;
-}
-
-.ti {
-    padding: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #000;
-    margin-left: 1.5rem;
-    display: flex;
-    flex-direction: column;
-}
-
 .rod01 {
 
     font-weight: bold;
