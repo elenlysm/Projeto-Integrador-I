@@ -11,20 +11,18 @@ h3 {
     font-weight: bold;
 }
 
-nav {
-    display: grid;
-    align-items: center;
-    align-content: space-evenly;
-    justify-content: space-around;
+section.informacoes{
+    display: flex;
+    margin: 2rem;
+}
+
+
+.reserva {
 }
 
 img.logo {
     width: 100%;
     height: 10rem;
-}
-
-.informações {
-    display: flex;
 }
 
 .sair {
@@ -38,6 +36,12 @@ img.logo {
 .nome {
     width: 3rem;
 }
+
+.curso{}
+
+.materia{}
+
+.sair{}
 
 .data {
     width: 3rem;
