@@ -2,6 +2,14 @@ body {
     background-color: #edc51b;
 }
 
+button{
+    background-color: transparent;
+    border: none;
+    padding: 3rem;
+    display: inline-block;
+    size: 3rem;
+}
+
 .rod01 {
 
     font-weight: bold;
