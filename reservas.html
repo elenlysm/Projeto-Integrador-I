@@ -45,16 +45,28 @@
     </header>
 
     <section class="reserva">
+        
         <h3>RESERVE UM LABORATÓRIO</h3>
         <label for="quantidade">INSIRA A QUANTIDADE DE ALUNOS</label>
         <input type="number" id="quantidade">
+        
         <h5>SELECIONE UMA DATA E UM HORÁRIO</h5>
+        <form style="display: flex;">
         <label for="data"><img src="img/calendario.png" class="data" alt="Calendário"> Data</label>
-        <input type="date" id="data">
-        <label for="hora_inicio"><img src="img/relogio.png" class="hora" alt="Relógio"> DAS: </label>
-        <input type="time" id="hora_inicio">
-        <label for="hora_fim">AS: </label>
-        <input type="time" id="hora_fim">
+        <input type="date" id="data"></form>
+        
+        <form style="display: flex;">
+            <label for="hora_inicio" style="display: flex; align-items: center;">
+                <img src="img/relogio.png" class="hora" alt="Relógio"> DAS: 
+                <input type="time" id="hora_inicio">
+            </label>
+            <label for="hora_fim" style="display: flex; align-items: center;">
+                AS: 
+                <input type="time" id="hora_fim">
+            </label>
+        </form>
+        
+        
         <h5>LABORATÓRIOS DISPONÍVEIS</h5>
         <table>
             <thead>
