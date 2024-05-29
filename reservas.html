@@ -10,58 +10,87 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="reservas.css">
-    <title>home</title>
+    <title>Reservas</title>
 </head>
 
 <body>
     <header>
-        <img src="img/logo-web.png" class="logo">
+        <nav class="navbar">
+            <div class="container">
+                <img src="img/logo-web.png" class="logo" alt="Logo">
+                <section class="informacoes">
+                    <ul>
+                        <li>
+                            <label for="nome"><img src="img/perfil.png" class="nome" alt="Perfil"></label>
+                        </li>
+                        <li>
+                            <label for="mail"><img src="img/o-email.png" class="mail" alt="Email"></label>
+                        </li>
+                        <li>
+                            <h5 class="curso">CURSO</h5>
+                        </li>
+                        <li>
+                            <label for="materias" class="materia">MATÉRIAS</label>
+                            <select name="materias" id="materias">
+                                <option value=""></option>
+                            </select>
+                        </li>
+                        <li>
+                            <a href="login.html"><img src="img/sair.png" class="sair" alt="Sair"></a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </nav>
     </header>
-    <section class="informacoes">
-        <label for="nome" class="nome"><img src="img/perfil.png" class="nome"></label>
-        <br>
-        <label for="mail" class="mail"><img src="img/o-email.png" class="mail"></label>
-        <h5 class="curso">CURSO</h5>
-        <label for="" class="materia">MATÉRIAS</label>
-        <select name="materias" id="">
-            <option value=""><data value=""></data></option>
-        </select>
-        <a href="login.html"><img src="img/sair.png" class="sair"></a>
-    </section>
+
     <section class="reserva">
         <h3>RESERVE UM LABORATÓRIO</h3>
-        <label for="">INSIRA A QUANTIDADE DE ALUNOS</label>
-        <input type="number">
+        <label for="quantidade">INSIRA A QUANTIDADE DE ALUNOS</label>
+        <input type="number" id="quantidade">
         <h5>SELECIONE UMA DATA E UM HORÁRIO</h5>
-        <img src="img/calendario.png" class="data">
-        <input type="date">
-        <img src="img/relogio.png" class="hora">
-        <label for="">DAS: </label>
-        <input type="time">
-        <label for="">AS: </label>
-        <input type="time">
+        <label for="data"><img src="img/calendario.png" class="data" alt="Calendário"> Data</label>
+        <input type="date" id="data">
+        <label for="hora_inicio"><img src="img/relogio.png" class="hora" alt="Relógio"> DAS: </label>
+        <input type="time" id="hora_inicio">
+        <label for="hora_fim">AS: </label>
+        <input type="time" id="hora_fim">
         <h5>LABORATÓRIOS DISPONÍVEIS</h5>
-        <table></table>
+        <table>
+            <thead>
+                <tr>
+                    <th>LABORATÓRIO</th>
+                    <th>DATA</th>
+                    <th>HORÁRIO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><data value=""></data></td>
+                </tr>
+            </tbody>
+        </table>
         <button type="submit">CONFIRMAR ALOCAÇÃO</button>
         <h3>ÚLTIMAS RESERVAS</h3>
         <table>
-            <tr>
-                <th>LABORATÓRIO</th>
-                <th>DATA</th>
-                <th>HORÁRIO</th>
-            </tr>
-            <tr>
-                <td>
-                    <data value=""></data>
-                </td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>LABORATÓRIO</th>
+                    <th>DATA</th>
+                    <th>HORÁRIO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><data value=""></data></td>
+                </tr>
+            </tbody>
         </table>
     </section>
+
     <footer>
         <div class="rodape bottom p-2 bg-black">
-            <p class="rod01 mx-auto" style="width: fit-content;">FACULDADES INTEGRADAS EINSTEIN DE LIMEIRA - FIEL
-            </p>
-            <br>
+            <p class="rod01 mx-auto" style="width: fit-content;">FACULDADES INTEGRADAS EINSTEIN DE LIMEIRA - FIEL</p>
             <p class="rod02 mx-auto" style="width: fit-content;">DESENVOLVIDO POR BBEL®</p>
         </div>
     </footer>
