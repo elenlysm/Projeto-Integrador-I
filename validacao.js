@@ -1,6 +1,6 @@
 const usuarios =[
     {
-        login:'perboni',
+        login:'perboni@gmail.com',
         pass:'perbas'
     },
     {
@@ -29,7 +29,7 @@ for(let i in usuarios){
 
     if(login == usuarios[i].login && senha == usuarios[i].pass){
         validalogin=true
-        location.href= "https://youtu.be/izGwDsrQ1eQ?si=Qb1G55EHvveV425R";
+        location.href= "reservas.html";
         break
     }
 }

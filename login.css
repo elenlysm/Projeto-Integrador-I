@@ -8,10 +8,17 @@ body {
 }
 
 form {
-    transform: translate(-50%, -50%);
-    margin-top: 27%;
-    margin-left: 56%;
+    max-width: 200px;
+    max-height: 220px;
+    width: calc(40% - 20px); 
+    height: calc(40vh - 20px);
+    background-color: black;
+    position: fixed;
+    top: 50%;
+    left: 42%;
+    transform: translate(-58%, -45%);
 }
+
 
 label {
     font-weight: bold;
