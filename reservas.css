@@ -3,65 +3,140 @@ body {
     display: block;
 }
 
-h5 {
-    font-weight: bold;
+
+header .navbar {
+    padding: 1rem;
+    border-color: #000;
 }
 
-h3 {
-    font-weight: bold;
+header .logo {
+    width: auto;
+    height: auto;
 }
 
-section.informacoes{
+header .informacoes {
     display: flex;
-    margin: 2rem;
+    align-items: center;
+    margin-left: auto;
 }
 
+header .informacoes ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header .informacoes ul li {
+    margin-left: 1rem;
+}
+
+header .informacoes img {
+    width: 30px;
+    height: auto;
+}
+
+header .informacoes .curso {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+header .informacoes .materia {
+    font-size: 1rem;
+    color: white;
+}
+
+header .informacoes select {
+    margin-left: 0.5rem;
+    padding: 0.25rem;
+}
 
 .reserva {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 4rem;
+    max-width: 50rem;
+    margin: 2rem auto;
+    box-shadow: 0 0 10rem rgba(0, 0, 0, 0.1);
 }
 
-img.logo {
-    width: 100%;
-    height: 10rem;
-}
-
-.sair {
-    width: 3rem;
-}
-
-.mail {
-    width: 4rem;
-}
-
-.nome {
-    width: 3rem;
-}
-
-.curso{}
-
-.materia{}
-
-.sair{}
-
-.data {
-    width: 3rem;
-}
-
-.hora {
-    width: 3rem;
-}
-
-.rodape {
-    position: relative;
-}
-
-.rod01 {
-
+.reserva h3,
+.reserva h5 {
     font-weight: bold;
+    text-align: center;
+}
+
+.reserva input {
+    display: inline;
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+.reserva label,
+.reserva select,
+.reserva button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.reserva img {
+    width: 1.5rem;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.reserva input[type="number"],
+.reserva input[type="date"],
+.reserva input[type="time"],
+.reserva select,
+.reserva button {
+    padding: 0.5rem;
+    border-radius: 4rem;
+    border: 0.05rem solid #ccc;
+}
+
+.reserva table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.reserva th {
+    background-color: #000;
     color: #fff;
 }
 
-.rod02 {
+.reserva table,
+.reserva th,
+.reserva td {
+    border: 0.05rem solid #ccc;
+}
+
+.reserva th,
+.reserva td {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #000;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer .rodape p {
+    margin: 0;
     font-weight: bold;
+}
+
+footer .rod02 {
     color: #a6a6a6;
+}
+
+footer .rod01 {
+    color: #fff;
 }
