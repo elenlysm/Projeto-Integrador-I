@@ -14,92 +14,100 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <img src="img/logo-web.png" class="logo" alt="Logo">
-                <section class="informacoes">
-                    <ul>
-                        <li>
-                            <label for="nome"><img src="img/perfil.png" class="nome" alt="Perfil"></label>
-                        </li>
-                        <li>
-                            <label for="mail"><img src="img/o-email.png" class="mail" alt="Email"></label>
-                        </li>
-                        <li>
-                            <h5 class="curso">CURSO</h5>
-                        </li>
-                        <li>
-                            <label for="materias" class="materia">MATÉRIAS</label>
-                            <select name="materias" id="materias">
-                                <option value=""></option>
-                            </select>
-                        </li>
-                        <li>
-                            <a href="login.html"><img src="img/sair.png" class="sair" alt="Sair"></a>
-                        </li>
-                    </ul>
-                </section>
+    <div class="container mt-4">
+        <header>
+            <img src="img/logo-web.png" alt="logo" class="navbar-brand">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="icon-container me-2">
+                        <i class="bi bi-person">
+                        </i>
+                    </div>
+                    <div class="icon-container me-2">
+                        <i class="bi bi-envelope">
+                        </i>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <input type="text" class="form-control me-2" placeholder="Curso">
+                    <input type="text" class="form-control me-2" placeholder="Matéria">
+                    <button class="btn btn-secondary"><i class="bi bi-search"></i></button>
+                </div>
             </div>
-        </nav>
-    </header>
+        </header>
+        <main>
+            <div class="card p-3 mb-4">
+                <h5 class="text-center mb-3">Reserve um Laboratório</h5>
+                <form>
+                    <div class="mb-3">
+                        <label for="quantidadeAlunos" class="form-label">Insira a Quantidade de Alunos:</label>
+                        <input type="text" class="form-control" id="quantidadeAlunos">
+                    </div>
+                    <div class="mb-3">
+                        <label for="dataReserva" class="form-label">Data:</label>
+                        <input type="date" class="form-control" id="dataReserva" placeholder="DD/MM/YY">
+                    </div>
+                    <div class="mb-3">
+                        <label for="horaReserva" class="form-label">Das:</label>
+                        <input type="time" class="form-control" id="horaReserva">
+                    </div>
+                    <div class="mb-3">
+                        <label for="horaReservaAte" class="form-label">Às:</label>
+                        <input type="time" class="form-control" id="horaReservaAte">
+                    </div>
+                    <button type="submit" class="btn btn-secondary w-100">Verificar Disponibilidade</button>
+                </form>
+            </div>
+            <div class="card p-3 mb-4">
+                <h5 class="text-center mb-3">Laboratórios que Atendem os Requisitos de Reserva</h5>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-warning">
+                            <tr>
+                                <th>Nome</th>
+                                <th>ID</th>
+                                <th>Softwares</th>
+                                <th>Nº de Computadores</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                            </tr>
 
-    <section class="reserva">
-        
-        <h3>RESERVE UM LABORATÓRIO</h3>
-        <label for="quantidade">INSIRA A QUANTIDADE DE ALUNOS</label>
-        <input type="number" id="quantidade">
-        
-        <h5>SELECIONE UMA DATA E UM HORÁRIO</h5>
-        <form style="display: flex;">
-        <label for="data"><img src="img/calendario.png" class="data" alt="Calendário"> Data</label>
-        <input type="date" id="data"></form>
-        
-        <form style="display: flex;">
-            <label for="hora_inicio" style="display: flex; align-items: center;">
-                <img src="img/relogio.png" class="hora" alt="Relógio"> DAS: 
-                <input type="time" id="hora_inicio">
-            </label>
-            <label for="hora_fim" style="display: flex; align-items: center;">
-                AS: 
-                <input type="time" id="hora_fim">
-            </label>
-        </form>
-        
-        
-        <h5>LABORATÓRIOS DISPONÍVEIS</h5>
-        <table>
-            <thead>
-                <tr>
-                    <th>LABORATÓRIO</th>
-                    <th>DATA</th>
-                    <th>HORÁRIO</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><data value=""></data></td>
-                </tr>
-            </tbody>
-        </table>
-        <button type="submit">CONFIRMAR ALOCAÇÃO</button>
-        <h3>ÚLTIMAS RESERVAS</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>LABORATÓRIO</th>
-                    <th>DATA</th>
-                    <th>HORÁRIO</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><data value=""></data></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card p-3">
+                <h5 class="text-center mb-3">Últimas Reservas</h5>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-warning">
+                            <tr>
+                                <th>Laboratório</th>
+                                <th>Data</th>
+                                <th>Horário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    </main>
     <footer>
         <div class="rodape bottom p-2 bg-black">
             <p class="rod01 mx-auto" style="width: fit-content;">FACULDADES INTEGRADAS EINSTEIN DE LIMEIRA - FIEL</p>
