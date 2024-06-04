@@ -15,30 +15,76 @@
 </head>
 
 <body>
-    <sectionn>
+    <section>
         <form action="">
             <label for="login" class="label p-2">LOGIN</label>
-            <input type="email" class="input" id="email" placeholder="@einsteinlimeira.com.br" name="email">
+            <input type="email" class="input" id="user" placeholder="@einsteinlimeira.com.br" name="email">
             <br>
             <label for="pwd" class="label p-2">SENHA</label>
-            <input type="password" class="input" id="pwd" name="senha">
+            <input type="password" class="input" id="senha" name="senha">
             <i class="bi bi-eye-slash" id="mostrar-senha"></i>
             <br>
             <label class="form-check-label d-inline-flex p-2">
                 <input class="form-check-input" type="checkbox" name="lembrar">
                 Lembre de mim
             </label>
-            <button type="submit">ENTRAR</button>
+            <button type="button" id="btn">ENTRAR</button>
         </form>
-        </section>
-        <footer>
-            <div class="rodape fixed-bottom bg-black">
-                <p class="rod01 mx-auto" style="width: fit-content;">FACULDADES INTEGRADAS EINSTEIN DE LIMEIRA - FIEL
-                </p>
-                <br>
-                <p class="rod02 mx-auto" style="width: fit-content;">DESENVOLVIDO POR BBEL®</p>
-            </div>
-        </footer>
+    </section>
+    <footer>
+        <div class="rodape fixed-bottom bg-black">
+            <p class="rod01 mx-auto" style="width: fit-content;">FACULDADES INTEGRADAS EINSTEIN DE LIMEIRA - FIEL
+            </p>
+            <br>
+            <p class="rod02 mx-auto" style="width: fit-content;">DESENVOLVIDO POR BBEL®</p>
+        </div>
+    </footer>
+    <script>
+        const usuarios = [
+            {
+                login: 'perboni@gmail.com',
+                senha: 'perbas'
+            },
+            {
+                login: 'elenf@gmail.com',
+                senha: 'freire'
+            },
+            {
+                login: 'biam@gmail.com',
+                senha: 'melhado'
+            },
+            {
+                login: 'biap@gmail.com',
+                senha: 'patinho'
+            }
+        ]
+
+        let botao = document.getElementById('btn')
+
+        botao.addEventListener('click', function logar() {
+            var login = document.getElementById('user').value;
+            var senha = document.getElementById('senha').value;
+            var validalogin = false
+
+            for (let i in usuarios) {
+                if (login == usuarios[i].login && senha == usuarios[i].senha) {
+                    validalogin = true
+                    location.href = "D:\\Faculdade\\Projeto Integrador\\Projeto-Integrador-I\\reservas.html";
+                    break;
+                }
+            }
+            if (validalogin == true) {
+                alert('OK')
+            } else {
+                alert('ERRO')
+            }
+        })
+
+        window.addEventListener("scroll", function () {
+            let header = document.querySelector('#header')
+            header.classList.toggle('rolagem', window.scrollY > 120);
+        })
+    </script>
 </body>
 
 </html>
