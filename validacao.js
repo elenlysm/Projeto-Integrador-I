@@ -1,4 +1,4 @@
-const usuarios = [
+/*const usuarios = [
     {
         login: 'perboni@gmail.com',
         senha: 'perbas'
@@ -28,7 +28,7 @@ botao.addEventListener('click', function logar() {
         if (login == usuarios[i].login && senha == usuarios[i].senha) {
             validalogin = true
             location.href = "D:\Faculdade\Projeto Integrador\Projeto-Integrador-I\reservas.html";
-
+          break
         }
     }
     if (validalogin == true) {
@@ -42,4 +42,4 @@ botao.addEventListener('click', function logar() {
 window.addEventListener("scroll", function () {
     let header = document.querySelector('#header')
     header.classList.toggle('rolagem', window.scrollY > 120);
-})
+})*/
